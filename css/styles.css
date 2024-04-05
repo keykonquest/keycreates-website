@@ -1,0 +1,958 @@
+
+                                                            /* Universal  Styles*/
+
+
+                                                /******** Font Classes ********/
+
+.koho-regular {                                 
+    font-family: "KoHo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  
+.koho-semibold-italic {                                 
+    font-family: "KoHo", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+  
+.rambla-regular {
+    font-family: "Rambla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  
+.rambla-regular-italic {
+    font-family: "Rambla", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+
+.jaldi-regular {                                 
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+.patrick-hand-regular {                        
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.patrick-hand-sc-regular {                        
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+                                                /******** Font Sizes ********/  
+
+
+:root {
+    --fs-xxl: 5rem;
+    --fs-xl: 4rem;
+    --fs-l: 3.5rem;
+    --fs-500: 2rem;
+    --fs-400: 1.5rem;
+    --fs-300: 1.15rem;
+    --fs-200: 1.025rem;
+    --fs-100: 1rem;
+}
+
+
+                                            /******** Responsiveness / Media Queries ********/  
+
+
+@media screen and (max-width: 275px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .dropDownMenu {
+        left: 2rem;
+        width: unset;
+    }
+    .aboutPage .portrait {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    :root {
+        --fs-xl: 3.5rem;
+    }
+
+    .poetryPage .carousel .list .item .content {
+        padding-right: 0;
+
+    }
+    .introbody .namecard {
+        width: 17.75em;
+        height: 7.5em;
+        position: absolute;
+        bottom: -24.625em;
+    }
+    .homePage {
+        padding-block: 15%;
+    }
+    .homePage .container {
+        margin-block: 10%;
+    }
+}
+
+@media screen and (max-width: 749px) {
+
+    :root {
+        --fs-l: 2rem;
+        --fs-300: 1rem;
+        
+    }
+    .homePage .container {
+        display: block;
+        text-align: center;
+    }
+    .homePage .imgcard {
+        width: 300px;
+        height: 240px;
+    }
+
+    .homePage .desktop {
+        display: none;
+    }
+    .homePage .mobile {
+        display: block;
+    }
+    .homePage .container h1 {
+        position: relative;
+        z-index: 5;
+        margin-block: -45px;
+        left: -2em;
+    }
+    .contentBox {
+        margin: 7em auto;
+        text-align: center;
+    }
+    .aboutPage .portrait {
+        object-fit: contain;
+    }
+    .aboutPage .bio {
+        margin: 7.5rem auto;
+    }
+    .aboutPage .actionButtonBox {
+        margin: 0;
+        padding: 0;
+    }
+    .aboutPage .container .actionButton {
+        margin: 3rem;
+    }
+    .poetryPage .poem {
+        display: block;
+    }
+    .poetryPage .poem .column1,
+    .poetryPage .poem .column2 {
+        width: 100%;
+        padding: 0;
+    }
+    .poetryPage.thumbnail {
+        transform: translateX(50px);
+    }
+    .contactPage .container {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .contactPage .container {
+        width: 52%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .navbar .links{
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+        position: absolute;
+        right: 1em;
+    }
+    .logo {
+        position: absolute;
+        left: 1em;
+    }
+    .dropDownMenu{
+        display: block;
+    }
+    .introbody .container {
+        margin: 0;
+        flex-direction: column;
+    }
+    .introbody .imghold {
+        display: unset;
+        width: unset;
+        max-width: unset;
+        margin: auto 0;
+    }
+    .introbody .keyhole img {
+        margin: 30% auto;
+    }
+    .introbody .namecard {
+        width: 17.75em;
+        height: 7.5em;
+        position: absolute;
+        bottom: -18.625em;
+    }
+    .introbody .namecard img {
+        width: 17.5em;
+        height: 7em;
+    }
+    .artPage .swiper {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 993px){
+
+    .navbar .links {
+        display: flex;
+    }
+    .navbar .toggle_btn {
+        display: none;
+    }
+    .dropDownMenu {
+        display: none;
+    }
+    .introbody .container {
+        margin: 3.25em 0 0 0;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .logo {
+        font-size: var(--fs-300);
+    }
+    .aboutPage .container {
+        flex-direction: column;
+    }
+    .aboutPage .bio {
+        margin: 5% auto auto auto;
+        text-align: center;
+    }
+    .aboutPage .actionButtonBox {
+        margin: 5% 0;
+        padding-block: unset;
+    }
+    .artPage .window {
+        flex-direction: column;
+        text-align: center;
+        margin: -5em auto 0 auto;
+    }
+    .artPage .pageHeading {
+        position: unset;
+    }
+    .artPage .swiper {
+        margin: 0 auto;
+    }
+    .artPage .sidetext {
+        position: static;
+        color: white;
+        width: 50%;
+        right: 3%;
+        top: 28.5%;
+        font-size: var(--fs-400);
+        margin: 10% auto 15% auto;
+    }
+
+}
+
+@media screen and (min-width: 1140px) {
+    .artPage .pageHeading {
+        position: absolute;
+        width: 15%;
+        right: 3%;
+        top: 13%;
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    :root {
+        --fs-500: 1.5rem;
+        --fs-400: 1.15rem;
+        --fs-300: 1rem;
+    }
+    .artPage .window {
+        margin: 10% auto;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .artPage .pageHeading {
+        top: 6%;
+    }
+}
+
+
+@media screen and (max-width: 1449px) {
+    .homePage #insp img {
+        animation: enterPage 0.5s 5s ease-in 1 forwards;
+    }
+    .hompage .cross {
+        animation: enterPage 0.5s 3.5s ease-in 1 forwards;
+    }
+}
+
+@media screen and (min-width: 1450px) {
+    .homePage #art{
+         animation: slideLeft 8s 3s linear 1 forwards;
+    } 
+    .homePage .cross {
+         animation: enterPage 0.5s 7.3s linear 1 forwards;
+    }
+    .homePage #insp {
+         position: absolute;
+         animation: slideRight 4s 7.5s linear 1 forwards;
+    } 
+    .homePage #insp img {
+         animation: enterPage 0.5s 7s ease-in 1 forwards;
+    }
+ }
+
+
+                                                /******** Global Elements ********/  
+
+
+html {
+    height: 100%;
+}
+
+
+li {
+    list-style: none;
+}
+
+ header {
+    position: relative;
+    padding: 0 2rem;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.navbar {
+    width: 57.5%;
+    height: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo {
+    font-size: var(--fs-500);
+    color: azure;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo .key-logo {
+    margin-right: 5px;
+}
+
+.navbar .links {
+    gap: 2rem;
+    text-shadow: 0 0 10px #000000, 0 0 15px #261b7f;
+}
+
+.navbar .toggle_btn {
+    color:#ffc738;
+    font-size: var(--fs-500);
+    cursor: pointer;
+}
+
+.navlinks {
+    font-size: var(--fs-400);
+    text-decoration: none;
+    color: #eee;
+
+}
+
+.navlinks:hover {
+    color: #ffc738;
+}
+
+.active {
+    color: #ffc738;
+}
+
+.dropDownMenu {
+    position: absolute;
+    right: 1em;
+    top: 60px;
+    height: 0;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropDownMenu a {
+    text-decoration: none;
+}
+
+.dropDownMenu.open {
+    height: 195px;
+}
+
+.dropDownMenu li {
+    padding: 0.75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropDownMenu .actionButton {
+    width: 6em;
+    height: 2em;
+    font-size: var(--fs-100);
+}
+
+.actionButton {
+    display: flex;
+    width: 8em;
+    height: 3em;
+    border-radius: 50px;
+    background: rgb(255 255 255 / 80%);
+    border-top-color: #cecdcba6;
+    border-right-color: #000000;
+    border-bottom-color: #000000;
+    border-left-color: #cecdcba6;
+    font-size: var(--fs-300);
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.actionButton:hover {
+    color: #fff;
+    background-color: #ffc738;
+    border-top-color: #ffe298;
+    border-left-color: #ffe298;
+}
+
+body {
+    display: flex;
+    font-family: Verdana , Arial, sans-serif;
+    flex-direction: column;
+    min-height: 80vh;
+    height: 100%;
+}
+
+.pageHeading {
+    font-weight: 100;
+    font-style: normal;
+    font-size:var(--fs-l);
+    color: white;
+    margin: 5rem auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-400);
+    margin: auto;
+    padding: 1.5em;
+    color: azure;
+    width: 100%;
+    height: fit-content;
+}
+
+.contentBox {
+    width: 55.5%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer {
+    background-color: rgb(0,0,30);
+    color: #fff;
+    width: 100%;
+    min-height: 10vh;
+    margin-top: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+footer .resources {
+    margin-block: 0.5em;
+}
+
+footer .footer-title {
+    margin: 0;
+}
+
+footer .credits a{
+    color: #f8f8f8;
+    font-size: .9rem;
+}
+
+
+.footerLinks {
+    display: flex;
+    justify-content: end;
+    padding-inline: 10px;
+}
+
+.socials {
+    display: flex;
+    padding: 0;
+    gap: 15px;
+}
+
+.socials li img {
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+}
+
+
+                                                /******** Home Page ********/  
+
+
+.homePage {
+    width: 98%;
+    text-align: center;
+    align-content: center;
+    display: grid;
+    background: url(../images/homepage/railwaySplit-shadow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+.pagetitle {
+    display: grid;
+    text-align: center;
+    color: aliceblue;
+}
+
+.welcome {
+    margin: auto;
+    font-size: var(--fs-xxl);
+    color: floralwhite;
+    text-shadow: 0 0 10px #000000, 0 0 15px #261b7f;
+    font-weight: 500;
+    font-style: italic;
+
+}
+
+.welcomeSub {
+    margin-block: 10px;
+    font-size: var(--fs-l);
+    color: rgb(223 195 123);
+    text-shadow: 0 0 10px #000000, 0 0 15px #261b7f;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.homePage .container {
+    position: relative;
+    justify-content: space-around;
+    width: 92%;
+    height: 60vh;
+}
+
+.imgcard {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    display: inline-block;
+    transition-duration: 5ms;
+}
+
+.imgcard .altimage {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition-duration: 5ms;
+}
+
+.imgcard:hover .altimage {
+    display: inline-block;
+}
+
+@keyframes enterPage {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.imgcard #art {
+    height: 400px;
+    width:300px;
+    background: url("Project 4\images\WelcomePage\dreamingsky_title1.png");
+}
+
+#art {
+    z-index: 3;
+}
+
+ #art img {
+    opacity: 0;
+    animation: enterPage 0.5s 2s ease-in 1 forwards;
+}
+
+@keyframes slideLeft {
+    30%{
+        transform: translateX(-147.85%);
+    }
+    90%{
+        box-shadow: 20px -15px 20px 5px rgba(0,0,0,0);
+        transform: translateX(-147.85%);
+    }
+    100% {
+        box-shadow: 20px -15px 20px 5px rgba(0,0,0,0.6);
+        transform: translateX(-147.85%);
+    }
+}
+
+.homePage .cross {
+    opacity: 0;
+    font-size: var(--fs-xxl);
+    color: #000000;
+    position: absolute;
+}
+
+.imgcard #insp {
+    height: 400px;
+    width:300px;
+    background: url("Project 4\images\WelcomePage\Aiming to be great_title1.png");
+}
+
+#insp {
+    z-index: 2;
+}
+
+ #insp img {
+    opacity: 0;
+}
+
+@keyframes slideRight {
+    50%{
+        transform: translateX(147.85%)
+    }
+    75% {
+        box-shadow: -20px -15px 20px 5px rgba(0,0,0,0.0);
+        transform: translateX(147.85%);
+    }
+    100% {
+        box-shadow: -20px -15px 20px 5px rgba(0,0,0,0.6);
+        transform: translateX(147.85%);
+    }
+}
+
+.addlinks {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    font-size: var(--fs-500);
+    animation: enterPage 1s 10s ease-in 1 forwards;
+}
+
+.addlinks tr {
+    display: flex;
+    gap: 20px;
+}
+
+.addlinks a {
+    text-shadow: 0 0 10px rgb(0,0,0);
+    color: azure;
+}
+
+.addlinks a:hover {
+    color: #ffc738;
+}
+
+.mobile {
+    display: none;
+}
+
+                                                /******** Art Gallery ********/  
+
+
+.artPage {
+    margin: 0;
+    box-sizing: border-box;
+    background: url(../images/art/bgimage.jpeg);
+    background-color: #2d3234;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+ 
+.window {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1em auto;
+}
+ 
+.swiper{
+    width: 55%;
+    height: -webkit-fill-available;
+    margin: 2em auto;
+}
+ 
+.swiper-slide {
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    overflow: hidden;
+}
+ 
+.swiper-slide img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+}
+ 
+.sidetext {
+    position: absolute;
+    color: white;
+    width: 15%;
+    right: 3%;
+    bottom: 24.5%;
+    font-size: var(--fs-300);
+}
+                                                
+
+                                                /******** About Page ********/  
+
+
+.aboutPage {
+    margin: 0;
+    box-sizing: border-box;
+    background: url(../images/about/officeplaza-bg.jpg);
+    background-color: #2d3234;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.aboutPage .contentBox {
+    width: 55.5%;
+    margin: 0 auto 10%;
+    padding: 0;
+}
+
+.aboutPage .container {
+    border: 1px solid;
+    padding: 1em;
+}
+
+.infoColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio {
+    margin: 0 auto auto 15%;
+    box-shadow: inset 0 300px 150px 0 rgba(0,0,0,0.35);
+    height: 286px;
+    overflow: auto;
+}
+
+.bio::-webkit-scrollbar {
+    width: .5em;
+}
+
+.bio::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+    margin-block: 0.5em;
+    border: .1em solid transparent;
+    background-clip: content-box;
+}
+
+.bio::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 100vw;
+}
+
+.bio:hover::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255,.6);
+}
+
+.bio p {
+    color: white;
+    margin: 0 0 auto 0;
+    font-size: var(--fs-300);}
+
+.actionButtonBox {
+    margin: 5% 0 0 9%;
+    display: flex;
+    justify-content: center;
+    padding-block: 15% 5%;
+}
+
+.actionButtonBox a {
+    text-decoration: none;
+}
+                                                
+                                                
+
+
+                                                /******** Contact Page ********/ 
+
+
+.contactPage {
+    margin: 0;
+    box-sizing: border-box;
+    background: url(../images/contact/miamiskyline-dark.jpg);
+    background-color: #2d3234;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contactPage .container {
+    border: 1px solid;
+    align-items: unset;
+    margin-bottom: 5%;
+    justify-content: center;
+}
+
+.contactPage .container h2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.businessCard {
+    width: max-content;
+    background-color: rgb(255,255,255,0.15);
+    font-size: var(--fs-100);
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+.businessCard li {
+    margin-block: 10%
+}
+
+#final-li {
+    margin-block: 10% 5%;
+}
+
+.inquiry {
+    font-weight: 550;
+}
+
+.adColumn {
+    width: 50%;
+    border-right: 1px solid black;
+}
+
+.headline {
+    font-weight: 600;
+    padding-left: .625rem;
+    font-size: var(--fs-400);
+    margin-block: 5% 11%;
+}
+
+.services {
+    padding: 0 .625rem;
+    text-shadow: 0 0 10px rgba(0,0,0,.8);
+}
+
+.actionbox-holder {
+        padding-inline: 10px;
+        background-color: rgb(223 195 123 / 50%);
+        padding-block: 10px;
+        width: 85%;
+}
+
+
+.actionbox p {
+    margin: 0;
+    font-size: var(--fs-300);
+}
+
+.actionbox h4 {
+    margin: 0;
+    font-weight: 100;
+}
+
+.actionbox a {
+    color: #000;
+    font-weight: bold;
+}
+
+.contactColumn {
+    height: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: min-content;
+}
+
+.contactMethods {
+    padding-left: 25px;
+}
+
+.form-box {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.contact-inputs {
+    margin-top: 1.5em;
+}
+
+.contact-submitbtn {
+    margin-top: -22px;
+}
+
+.contactMethods ul {
+    padding: 0;
+    text-align: end;
+    text-shadow: 0 0 10px rgba(0,0,0,.8);
+    font-size: var(--fs-300);
+}
