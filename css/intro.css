@@ -24,10 +24,6 @@
 }
 
 .introbody .container {
-    display: flex;
-    align-items: center;
-    font-size: var(--fs-400);
-    padding: 1.5em;
     justify-content: space-between;
 }
 

@@ -268,7 +268,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 35px;
 }
 
 .arrows button {
@@ -311,9 +311,9 @@
     color: #f8f8f8;
     background-color: rgba(0,0,0,0.1);
     text-shadow: 0 0 5px #000000, 0 0 6px #00022d;
-    font-size: clamp(1.5rem, 1.5rem, 2rem);
+    font-size: clamp(1.5rem, 2.265rem, 3rem);
     max-width: 110%;
-    max-height: 55vh;
+    max-height: 54.5vh;
     overflow: auto;
     text-overflow: ellipsis;
 }
@@ -323,8 +323,7 @@
 }
 
 .poem2 {
-    width: 85%;
-    max-height: 55.5vh;
+    width: 100%;
 }
 
 .poem .column1 {
