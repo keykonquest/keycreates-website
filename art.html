@@ -5,6 +5,7 @@
         <meta name="contactKey" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <title> Art Gallery </title>
+        <link rel="stylesheet" href="css/lightbox.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -18,7 +19,7 @@
             <nav class="navbar">
                 <div class="logo"><a class="logo" href="index.html"><span class="key-logo"><img src="images/key1.png" alt="key-with-crown"></span>Key Creations</a></div>
                 <ul class="links">
-                    <li><a href="index.html" class="navlinks">Home</a></li>
+                    <li><a href="home.html" class="navlinks">Home</a></li>
                     <li><a href="#" class="navlinks">Art</a></li>
                     <li><a href="poetry.html" class="navlinks">Poetry</a></li>
                     <li><a href="about.html" class="navlinks">About</a></li>
@@ -29,7 +30,7 @@
                 </div>
             </nav>
             <ul class="dropDownMenu">
-                <li><a href="index.html" class="navlinks">Home</a></li>
+                <li><a href="home.html" class="navlinks">Home</a></li>
                 <li><a href="poetry.html" class="navlinks">Poetry</a></li>
                 <li><a href="about.html" class="navlinks">About</a></li>
                 <li><a href="contact.html" class="actionButton">Contact</a></li>
@@ -40,19 +41,43 @@
                 <h1 class="pageHeading rambla-regular">Gallery</h1>
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img id="image1" src="images/art/nurnburgpond.jpg" alt="Beautiful-photo-of-Nuremberg-pond"></div>
-                        <div class="swiper-slide"><img id="image2" src="images/art/flyboys.png" alt="Two-men-posing-at-a-train-station-inverted-colors"></div>
-                        <div class="swiper-slide"><img id="image3" src="images/Art/meltingtime.png" alt="Clock-melting-in-hand-Original-art"></div>
-                        <div class="swiper-slide"><img id="image4" src="images/art/legs.jpg" alt="Couple-standing-face-to-face-low-view"></div>
-                        <div class="swiper-slide"><img id="image5" src="images/art/awakened.png" alt="Abstract-art-of-a-man-with-third-eye-equality"></div>
-                        <div class="swiper-slide"><img id="image6" src="images/art/canvashorse.jpg" alt="Artistic-photo-of-a-horse-in-grass-field"></div>
+                        <div class="swiper-slide">
+                            <a href="images/art/nurnburgpond.jpg" data-lightbox="gallery" data-title="Pond of Communion">
+                                <img id="image1" src="images/art/nurnburgpond.jpg" alt="Beautiful-photo-of-Nuremberg-pond">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="images/art/flyboys.png" data-lightbox="gallery" data-title="Fly Boys">
+                                <img id="image2" src="images/art/flyboys.png" alt="Two-men-posing-at-a-train-station-inverted-colors">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="images/Art/meltingtime.png" data-lightbox="gallery" data-title="Time's Melting Away">
+                                <img id="image3" src="images/Art/meltingtime.png" alt="Clock-melting-in-hand-Original-art">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="images/art/legs.jpg" data-lightbox="gallery" data-title="Face to face">
+                                <img id="image4" src="images/art/legs.jpg" alt="Couple-standing-face-to-face-low-view">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="images/art/awakened.png" data-lightbox="gallery" data-title="Awakened">
+                                <img id="image5" src="images/art/awakened.png" alt="Abstract-art-of-a-man-with-third-eye-equality">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="images/art/canvashorse.jpg" data-lightbox="gallery" data-title="Canvas Pony">
+                                <img id="image6" src="images/art/canvashorse.jpg" alt="Artistic-photo-of-a-horse-in-grass-field">
+                            </a>
+                        </div>
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-                <div class="sidetext rambla-regular">I am highly skilled in photography and photo manipulation. Unless stated otherwise, I created every image
+                <div class="sidetext rambla-regular"><p>I am highly skilled in photography and photo manipulation. Unless stated otherwise, I created every image
                     on this website. I am proficient in Adobe Photoshop, Illustrator, Lightroom, and various other platforms. I also have strong 
-                    drawing capabilities, and occasionally, I’ll mix these skills to produce incredible, unique artworks. </div>
+                    drawing capabilities, and occasionally, I’ll mix these skills to produce incredible, unique artworks.</p></div>
             </section>
         </main>
         <footer>
@@ -72,7 +97,7 @@
                 </ul>
             </div>
         </footer>
-
+    <script src="js/lightbox-plus-jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {

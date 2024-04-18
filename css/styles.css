@@ -81,7 +81,28 @@
         width: unset;
     }
     .aboutPage .portrait {
-        width: 250px;
+        max-width: 250px;
+    }
+    .introbody .decoy {
+        max-width: 30%;
+    }
+    .introbody .introbgimg {
+        max-width: 50%;
+    }
+    .introbody .introheadline {
+        font-size: 9vw;
+    }
+    .introbody .introsubline {
+        font-size: var(--fs-500);
+    }
+    .introbody .temp-msg {
+        font-size: var(--fs-400);
+    }
+    .introbody .namecard {
+        bottom: 1rem;
+    }
+    .artPage .sidetext {
+        font-size: clamp(1.25rem, 1.75rem, var(--fs-500));
     }
 }
 
@@ -94,17 +115,14 @@
         padding-right: 0;
 
     }
-    .introbody .namecard {
-        width: 17.75em;
-        height: 7.5em;
-        position: absolute;
-        bottom: -24.625em;
-    }
     .homePage {
         padding-block: 15%;
     }
     .homePage .container {
         margin-block: 10%;
+    }
+    .logo a {
+        font-size: 3.5vw;
     }
 }
 
@@ -114,6 +132,9 @@
         --fs-l: 2rem;
         --fs-300: 1rem;
         
+    }
+    .pageHeading {
+        font-size: 3.5rem;
     }
     .homePage .container {
         display: block;
@@ -179,7 +200,6 @@
     .navbar .links{
         display: none;
     }
-
     .navbar .toggle_btn {
         display: block;
         position: absolute;
@@ -203,17 +223,24 @@
         margin: auto 0;
     }
     .introbody .keyhole img {
-        margin: 30% auto;
+        margin: 25% auto;
+    }
+    .introbody .decoy {
+        max-width: 28%;
     }
     .introbody .namecard {
         width: 17.75em;
         height: 7.5em;
         position: absolute;
-        bottom: -18.625em;
+        right: 0;
+
     }
     .introbody .namecard img {
         width: 17.5em;
         height: 7em;
+    }
+    .homePage .addlinks {
+        font-size: 5vw;
     }
     .artPage .swiper {
         width: 80%;
@@ -233,6 +260,9 @@
     }
     .introbody .container {
         margin: 3.25em 0 0 0;
+    }
+    .introbody .namecard {
+        bottom: 1em;
     }
 }
 
@@ -261,6 +291,7 @@
     }
     .artPage .swiper {
         margin: 0 auto;
+        width: 80vw;
     }
     .artPage .sidetext {
         position: static;
@@ -268,8 +299,8 @@
         width: 50%;
         right: 3%;
         top: 28.5%;
-        font-size: var(--fs-400);
         margin: 10% auto 15% auto;
+        font-size: clamp(1rem, 1.75rem, var(--fs-500));
     }
 
 }
@@ -309,6 +340,9 @@
     .hompage .cross {
         animation: enterPage 0.5s 3.5s ease-in 1 forwards;
     }
+    .homePage .addlinks{
+        animation: enterPage 1s 6s ease-in 1 forwards;
+    }
 }
 
 @media screen and (min-width: 1450px) {
@@ -325,8 +359,20 @@
     .homePage #insp img {
          animation: enterPage 0.5s 7s ease-in 1 forwards;
     }
+    .homePage .addlinks{
+        animation: enterPage 1s 10s ease-in 1 forwards;
+    }
  }
 
+ @media screen and (max-height: 900px) {
+    :root {
+        --fs-500: 1.25rem;
+    }
+    .artPage .sidetext {
+        bottom: 16%;
+    }
+    
+ }
 
                                                 /******** Global Elements ********/  
 
@@ -341,6 +387,7 @@ li {
 }
 
  header {
+    min-height: 5%;
     position: relative;
     padding: 0 2rem;
     backdrop-filter: blur(5px);
@@ -350,13 +397,12 @@ li {
 
 .navbar {
     width: 57.5%;
-    height: 50px;
+    height: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 100;
 }
 
 .logo {
@@ -377,9 +423,9 @@ li {
 }
 
 .navbar .toggle_btn {
-    color:#ffc738;
-    font-size: var(--fs-500);
+    color: #ffc738;
     cursor: pointer;
+    font-size: 5.25vw;
 }
 
 .navlinks {
@@ -398,11 +444,12 @@ li {
 }
 
 .dropDownMenu {
+    padding-inline: 1.25rem;
     position: absolute;
     right: 1em;
     top: 60px;
     height: 0;
-    background: rgba(255,255,255,0.1);
+    background: rgba(0,0,0,0.4);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -414,7 +461,7 @@ li {
 }
 
 .dropDownMenu.open {
-    height: 195px;
+    height: auto;
 }
 
 .dropDownMenu li {
@@ -424,10 +471,14 @@ li {
     justify-content: center;
 }
 
+.dropDownMenu .navlinks {
+    font-size: 2rem;
+}
+
 .dropDownMenu .actionButton {
     width: 6em;
     height: 2em;
-    font-size: var(--fs-100);
+    font-size: var(--fs-500);
 }
 
 .actionButton {
@@ -678,7 +729,6 @@ footer .credits a{
     display: flex;
     justify-content: center;
     font-size: var(--fs-500);
-    animation: enterPage 1s 10s ease-in 1 forwards;
 }
 
 .addlinks tr {
@@ -735,18 +785,18 @@ footer .credits a{
 }
  
 .swiper-slide img {
-    width: inherit;
+    width: 55vw;
     height: inherit;
     object-fit: contain;
 }
  
 .sidetext {
+    font-size: clamp(1rem, 1.3vw, var(--fs-500));
     position: absolute;
     color: white;
     width: 15%;
     right: 3%;
-    bottom: 24.5%;
-    font-size: var(--fs-300);
+    bottom: 21%;
 }
                                                 
 

@@ -4,6 +4,7 @@
 .poetryPage {
     margin: 0;
     background-color: black;
+    padding-top: 3px;
 }
 
  .poetryPage .navbar {
@@ -12,9 +13,9 @@
 
 .carousel {
     width: 100%;
-    height: 100vh;
+    min-height: 97vh;
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: -4vh;
     position: relative;
 }
 
@@ -271,8 +272,8 @@
 }
 
 .arrows button {
-    width: 50px;
-    height: 50px;
+    min-width: 20%;
+    min-height: 50px;
     border-radius: 50%;
     background-color: rgb(155 155 155 / 40%);
     border: none;
@@ -305,13 +306,14 @@
 }
 
 .poem {
-    margin: 1em 0; 
+    margin: 1em 0;
+    padding-inline: 10px;
     color: #f8f8f8;
     background-color: rgba(0,0,0,0.1);
     text-shadow: 0 0 5px #000000, 0 0 6px #00022d;
-    font-size: 1.1rem;
-    width: 105%;
-    max-height: 487px;
+    font-size: clamp(1.5rem, 1.5rem, 2rem);
+    max-width: 110%;
+    max-height: 55vh;
     overflow: auto;
     text-overflow: ellipsis;
 }
@@ -322,7 +324,7 @@
 
 .poem2 {
     width: 85%;
-    max-height: 400px;
+    max-height: 55.5vh;
 }
 
 .poem .column1 {

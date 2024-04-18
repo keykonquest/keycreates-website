@@ -15,6 +15,7 @@
     padding-top: 3.75em;
     padding: 50px;
     height: unset;
+    color: azure;
 }
 
 .heading {
@@ -58,7 +59,8 @@
 .decoy {
     margin: auto;
     position: relative;
-    right: 1px;
+    right: 10px;
+    max-width: 50%;
 }
 
 .mainhead {
@@ -76,17 +78,8 @@
     object-fit: contain;
 }
 
-.namecard-container {
-    display: flex;
-}
-
 .namecard {
-    width: 30.75em;
-    height: 10.5em;
-    position: fixed;
-    right: 0;
-    bottom: 20px;
-    margin: 1em;
+    bottom: -18.625em;
 }
 
 .name {
