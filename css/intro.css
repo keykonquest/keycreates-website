@@ -24,6 +24,7 @@
 }
 
 .introbody .container {
+    max-width: 100%;
     justify-content: space-between;
 }
 
@@ -75,7 +76,7 @@
 }
 
 .namecard {
-    bottom: -18.625em;
+    bottom: -14.625em;
 }
 
 .name {
