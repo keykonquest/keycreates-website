@@ -35,8 +35,8 @@
 .carousel .list .item .content {
     position: absolute;
     top: 10%;
-    max-width: 60%;
-    left: 30%;
+    max-width: 65%;
+    left: 32.5%;
     transform: translateX(-50%);
     padding-right: 3%;
     box-sizing: border-box;
@@ -104,7 +104,7 @@
 
 @keyframes showThumbnail {
     to{
-        width: 150px;
+        width: 180px;
     }
 }
 
@@ -183,7 +183,7 @@
 } 
 
 #wotthumb {
-    margin: 1em auto 6em auto;
+    margin: 1em auto 7.5em auto;
 }
 
 #falthumb{
@@ -191,7 +191,7 @@
 }
 
 #mofthumb {
-    margin: 1em auto 5em auto;
+    margin: 1em auto 6.5em auto;
 }
 
 .thumbnail {
@@ -207,8 +207,8 @@
 
 .thumbnail .item {
     margin: 0;
-    width: 150px;
-    height: 220px;
+    width: 180px;
+    height: 250px;
     flex-shrink: 0;
     position: relative;
 }
@@ -230,12 +230,12 @@
 }
 
 .thumbnail .item .content .title {
-    font-size: var(--fs-200);
+    font-size: 1.15rem;
     overflow-wrap: break-word;
 }
 
 .thumbnail .item .content .descrpt {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .thumbnail .content div {
@@ -299,6 +299,7 @@
     color: white;
     margin: 2rem 0 0rem;
     width: 100%;
+    padding-left: 10px;
 }
 
 .carousel .list #wis-trees .title {
@@ -311,11 +312,21 @@
     color: #f8f8f8;
     background-color: rgba(0,0,0,0.1);
     text-shadow: 0 0 5px #000000, 0 0 6px #00022d;
-    font-size: clamp(1.5rem, 2.265rem, 3rem);
-    max-width: 110%;
-    max-height: 54.5vh;
+    font-size: clamp(1.5rem, 2.265rem, 2.65rem);
+    max-width: 100%;
+    max-height: 51.5vh;
     overflow: auto;
     text-overflow: ellipsis;
+}
+
+.scroll-indicator {
+    font-size: 1.5rem;
+    position: relative;
+    margin: 0;
+    color: #fff;
+    width: min-content;
+    bottom: 80px;
+    padding-left: 10px;
 }
 
 .poem p {
@@ -353,4 +364,26 @@
 
 .poem:hover::-webkit-scrollbar-thumb {
     background: rgba(255, 255, 255,.6);
+}
+
+
+@media screen and (max-width: 1000px) {
+    .carousel .list .item .full-size {
+        max-width: 65%;
+        left: 40%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .carousel .list .item .content {
+        max-width: 40%;
+        left: 30%;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+ #mofthumb,#wotthumb,#falthumb{
+    position: static;
+        display: none;
+    }
 }
