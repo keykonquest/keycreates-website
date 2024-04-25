@@ -203,7 +203,6 @@
     }
 }
 
-
 @media screen and (min-width: 993px){
 
     .navbar .links {
@@ -356,7 +355,6 @@
     }
 }
 
-
 @media screen and (max-width: 1400px) {
     :root {
         --fs-500: 1.5rem;
@@ -373,7 +371,6 @@
         top: 6%;
     }
 }
-
 
 @media screen and (max-width: 1449px) {
     .homePage #insp img {
@@ -412,7 +409,6 @@
 html {
     height: 100%;
 }
-
 
 li {
     list-style: none;
@@ -875,7 +871,6 @@ footer .credits a{
     width: 90%;
 }
 
-
 .portrait {
     min-width: 350px;
     min-height: 500px;
@@ -929,9 +924,7 @@ footer .credits a{
 .actionButtonBox a {
     text-decoration: none;
 }
-                                                
-                                                
-
+                                                                                                
 
                                                 /******** Contact Page ********/ 
 
@@ -959,7 +952,6 @@ footer .credits a{
     display: flex;
     justify-content: flex-end;
 }
-
 
 .businessCard {
     width: max-content;
@@ -1007,7 +999,6 @@ footer .credits a{
         padding-block: 10px;
         width: 85%;
 }
-
 
 .actionbox p {
     margin: 0;
