@@ -257,7 +257,7 @@
         margin-top: 15%;
     }
     .logo a {
-        font-size: 3.5vw;
+        font-size: clamp(1.5rem, 2rem, 3.015vw);
     }
     .contactPage .businessCard {
         flex-direction: column;
@@ -415,7 +415,7 @@ li {
 }
 
  header {
-    min-height: 5%;
+    min-height: 6%;
     position: relative;
     padding: 0 2rem;
     backdrop-filter: blur(5px);

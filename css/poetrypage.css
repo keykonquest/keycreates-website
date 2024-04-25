@@ -309,9 +309,9 @@
     color: #f8f8f8;
     background-color: rgba(0,0,0,0.1);
     text-shadow: 0 0 5px #000000, 0 0 6px #00022d;
-    font-size: clamp(1.5rem, 2.265rem, 2.65rem);
+    font-size: clamp(1.5rem, 2.265rem, 2vw);
     max-width: 100%;
-    max-height: 51.5vh;
+    max-height: 48vh;
     overflow: auto;
     text-overflow: ellipsis;
 }
