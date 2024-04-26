@@ -70,70 +70,6 @@
                                             /******** Responsiveness / Media Queries ********/  
 
 
-@media screen and (max-width: 275px) {
-    .logo {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .dropDownMenu {
-        left: 2rem;
-        width: unset;
-    }
-    .aboutPage .portrait {
-        max-width: 250px;
-    }
-    .introbody .decoy {
-        max-width: 30%;
-    }
-    .introbody .introbgimg {
-        max-width: 50%;
-    }
-    .introbody .introheadline {
-        font-size: 9vw;
-    }
-    .introbody .introsubline {
-        font-size: var(--fs-500);
-    }
-    .introbody .temp-msg {
-        font-size: var(--fs-400);
-    }
-    .introbody .namecard {
-        bottom: 0;
-    }
-}
-
-@media screen and (max-width: 678px) {
-    :root {
-        --fs-xl: 3.5rem;
-    }
-    .poetryPage .carousel .list .item .content {
-        padding-right: 0;
-    }
-    .homePage {
-        padding-block: 15%;
-    }
-    .homePage .container {
-        margin-block: 10%;
-    }
-    .logo a {
-        font-size: 3.5vw;
-    }
-    .contactPage .businessCard {
-        flex-direction: column;
-    }
-    .contactPage .adColumn {
-        width: unset;
-        border-right: unset;
-        padding-inline: 1rem;
-    }
-    .contactPage .contactColumn {
-        width: unset;
-        align-self: end;
-        margin-top: 2em;
-    }
-}
 
 @media screen and (max-width: 749px) {
 
@@ -142,6 +78,7 @@
         --fs-300: 1rem;
     }
     .pageHeading {
+        text-align: center;
         font-size: 3.5rem;
     }
     .homePage .container {
@@ -199,6 +136,16 @@
     }
 }
 
+@media screen and (max-height: 900px) {
+    :root {
+        --fs-500: 1.25rem;
+    }
+    .artPage .sidetext {
+        bottom: 16%;
+    }
+    
+ }
+
 @media screen and (max-width:992px) {
     .navbar .links{
         display: none;
@@ -251,8 +198,10 @@
     .artPage .swiper-slide img {
         width: 80vw;
     }
+    .pageHeading, .heading-box {
+        width: 80%;
+    }
 }
-
 
 @media screen and (min-width: 993px){
 
@@ -274,6 +223,85 @@
     .artPage .swiper {
         width: 55%;
     }
+    .heading-box {
+        width: 54.5%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    :root {
+        --fs-xxl: 3rem;
+        --fs-xl: 4.5rem;
+        --fs-l: 2rem;
+    }
+    .introbody {
+        padding: unset;
+    }
+    .introbody .namecard {
+        bottom: -30em;
+    }
+    .poetryPage .carousel .list .item .content {
+        padding-right: 0;
+    }
+    .homePage {
+        padding-block: 15%;
+        padding-inline: 1px;
+    }
+    .homePage .imgcard {
+        margin-block: 1.15rem;
+    }
+    .homePage .container {
+        margin-block: 10%;
+    }
+    .homePage .pagelinks {
+        margin-top: 15%;
+    }
+    .logo a {
+        font-size: clamp(1.5rem, 2rem, 3.015vw);
+    }
+    .contactPage .businessCard {
+        flex-direction: column;
+        font-size: clamp(var(--fs-100), 2.25rem, 3rem);
+    }
+    .contactPage .adColumn {
+        width: unset;
+        border-right: unset;
+        padding-inline: 1rem;
+    }
+    .contactPage .contactColumn {
+        width: unset;
+        align-self: end;
+        margin-top: 2em;
+    }
+    .contactPage .contactMethods {
+        font-size: clamp(var(--fs-100), 2.25rem, 3rem);
+    }
+    .aboutPage .portrait {
+        width: 450px;
+    }
+    .aboutPage .contentBox {
+        max-width: 80.5%;
+    }
+    #mofthumb,#wotthumb,#falthumb{
+        position: static;
+        display: none;
+    }
+    .contactPage .input-bar {
+        width: 60%;
+        min-height: 2rem;
+    }
+    .contactPage .headline {
+        font-size: clamp(var(--fs-200), 2.5rem, 3rem);
+    }
+}
+
+@media screen and (min-width: 1021px) {
+    .aboutPage .contentBox {
+        max-width: 60.5%;
+    }
+    .introbody {
+        padding: 50px;
+    }
 }
 
 @media screen and (max-width: 1140px) {
@@ -288,12 +316,11 @@
         text-align: center;
     }
     .aboutPage .actionButtonBox {
-        margin: 5% 0;
+        margin: 10% 0;
         padding-block: unset;
     }
     .artPage .window {
         flex-direction: column;
-        text-align: center;
         margin: -5em auto 0 auto;
     }
     .artPage .pageHeading {
@@ -311,6 +338,7 @@
         top: 28.5%;
         margin: 10% auto 15% auto;
         font-size: clamp(1.625rem, 1.8rem, 2.5rem);
+        text-align: center;
     }
 
 }
@@ -326,7 +354,6 @@
         max-width: 51.5%;
     }
 }
-
 
 @media screen and (max-width: 1400px) {
     :root {
@@ -344,7 +371,6 @@
         top: 6%;
     }
 }
-
 
 @media screen and (max-width: 1449px) {
     .homePage #insp img {
@@ -377,16 +403,6 @@
     }
  }
 
- @media screen and (max-height: 900px) {
-    :root {
-        --fs-500: 1.25rem;
-    }
-    .artPage .sidetext {
-        bottom: 16%;
-    }
-    
- }
-
                                                 /******** Global Elements ********/  
 
 
@@ -394,13 +410,12 @@ html {
     height: 100%;
 }
 
-
 li {
     list-style: none;
 }
 
  header {
-    min-height: 5%;
+    min-height: 5.5%;
     position: relative;
     padding: 0 2rem;
     backdrop-filter: blur(5px);
@@ -456,7 +471,7 @@ li {
 }
 
 .dropDownMenu {
-    padding-inline: 1.25rem;
+    padding-inline: 30px;
     position: absolute;
     right: 1em;
     top: 60px;
@@ -474,6 +489,7 @@ li {
 
 .dropDownMenu.open {
     height: auto;
+    padding-block: 10px;
 }
 
 .dropDownMenu li {
@@ -503,7 +519,7 @@ li {
     border-right-color: #000000;
     border-bottom-color: #000000;
     border-left-color: #cecdcba6;
-    font-size: var(--fs-300);
+    font-size: 1.25rem;
     color: black;
     font-weight: bold;
     justify-content: center;
@@ -526,16 +542,23 @@ body {
 }
 
 main {
+    margin-bottom: 40%;
+}
 
+.poetryPage main {
+    margin-bottom: 5%;
+}
+
+.heading-box {
+    margin: auto;
 }
 
 .pageHeading {
     font-weight: 100;
     font-style: normal;
-    font-size:var(--fs-l);
+    font-size:var(--fs-xl);
     color: white;
     margin: 5rem auto;
-    width: 90%;
 }
 
 .container {
@@ -545,7 +568,7 @@ main {
     margin: auto;
     padding: 1.5em;
     color: azure;
-    height: fit-content;
+    min-height: max-content;
 }
 
 .contentBox {
@@ -558,7 +581,7 @@ footer {
     background-color: rgb(0,0,30);
     color: #fff;
     width: 100%;
-    min-height: 10vh;
+    min-height: max-content;
     margin-top: auto;
     display: flex;
     align-items: flex-end;
@@ -571,11 +594,12 @@ footer .resources {
 
 footer .footer-title {
     margin: 0;
+    font-size: clamp(var(--fs-200), 1.75rem, 2.5rem);
 }
 
 footer .credits a{
     color: #f8f8f8;
-    font-size: .9rem;
+    font-size: clamp(var(--fs-200), 1.75rem, 2.5rem);
 }
 
 
@@ -593,8 +617,8 @@ footer .credits a{
 
 .socials li img {
     background-color: #fff;
-    height: 30px;
-    width: 30px;
+    width: 55px;
+    height: 55px;
 }
 
 
@@ -602,7 +626,6 @@ footer .credits a{
 
 
 .homePage {
-    width: 98%;
     text-align: center;
     align-content: center;
     display: grid;
@@ -640,9 +663,10 @@ footer .credits a{
 }
 
 .homePage .container {
+    padding: 0;
     position: relative;
     justify-content: space-around;
-    width: 92%;
+    width: 100%;
     height: 60vh;
 }
 
@@ -740,7 +764,12 @@ footer .credits a{
     }
 }
 
+.pagelinks {
+    width: 100%;
+}
+
 .addlinks {
+    padding-left: 10px;
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -781,7 +810,7 @@ footer .credits a{
  
 .window {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     margin: 3em auto;
 }
@@ -789,6 +818,7 @@ footer .credits a{
 .swiper{
     height: -webkit-fill-available;
     margin: 2em auto;
+    text-align: center;
 }
  
 .swiper-slide {
@@ -830,8 +860,7 @@ footer .credits a{
 }
 
 .aboutPage .contentBox {
-    width: 60.5%;
-    max-width: 80.5%;
+    width: max-content;
     margin: 0 auto 10%;
     padding: 0;
 }
@@ -841,7 +870,6 @@ footer .credits a{
     padding: 1em;
     width: 90%;
 }
-
 
 .portrait {
     min-width: 350px;
@@ -896,9 +924,7 @@ footer .credits a{
 .actionButtonBox a {
     text-decoration: none;
 }
-                                                
-                                                
-
+                                                                                                
 
                                                 /******** Contact Page ********/ 
 
@@ -917,7 +943,7 @@ footer .credits a{
 .contactPage .container {
     border: 1px solid;
     align-items: unset;
-    margin-bottom: 5%;
+    margin-bottom: 20%;
     justify-content: center;
     min-width: 49.5%;
 }
@@ -925,12 +951,6 @@ footer .credits a{
 .contactPage .container h2 {
     display: flex;
     justify-content: flex-end;
-}
-
-.contactPage .heading-box{
-    width: 60.5%;
-    margin: 0 auto;
-    padding: 0;
 }
 
 .businessCard {
@@ -965,6 +985,7 @@ footer .credits a{
     padding-left: .625rem;
     font-size: var(--fs-400);
     margin-block: 5% 11%;
+    color: rgb(255, 199, 56);
 }
 
 .services {
@@ -979,10 +1000,8 @@ footer .credits a{
         width: 85%;
 }
 
-
 .actionbox p {
     margin: 0;
-    font-size: var(--fs-300);
 }
 
 .actionbox h4 {
@@ -1028,11 +1047,12 @@ footer .credits a{
 }
 
 .contact-inputs {
+    width: 100%;
     margin-top: 1.5em;
 }
 
 .input-bar {
-    width: 70%;
+    width: 80%;
 }
 
 .contact-submitbtn {

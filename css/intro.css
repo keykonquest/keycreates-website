@@ -11,9 +11,7 @@
     background-size: cover;
     display: flex;
     align-items: center;
-    background-color: #eaf3fb ;
-    padding-top: 3.75em;
-    padding: 50px;
+    background-color: #eaf3fb;
     height: unset;
     color: azure;
 }
@@ -39,7 +37,7 @@
 
 .introheadline {
     margin: .5em 0 0 0;
-    font-size: var(--fs-xl);
+    font-size: var(--fs-xxl);
     font-weight: 100;
 }
 
