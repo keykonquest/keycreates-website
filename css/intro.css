@@ -44,7 +44,6 @@
 .introsubline {
     font-size: 1.4rem;
     font-weight: 100;
-    text-decoration: line-through;
 }
 
 .temp-msg {
@@ -53,9 +52,11 @@
 
 .decoy {
     margin: auto;
-    position: relative;
-    right: 10px;
-    max-width: 50%;
+    position: fixed;
+    left: 4%;
+    min-width: 7%;
+    bottom: 18%;
+    max-width: 8%;
 }
 
 .mainhead {

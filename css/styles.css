@@ -382,6 +382,11 @@
     .homePage .addlinks{
         animation: enterPage 1s 6s ease-in 1 forwards;
     }
+    .introbody .decoy {
+        max-width: 12%;
+        left: 10%;
+        bottom: auto;
+    }
 }
 
 @media screen and (min-width: 1450px) {
