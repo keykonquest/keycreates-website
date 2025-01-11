@@ -102,6 +102,12 @@
         margin-block: -45px;
         left: -2em;
     }
+    .pagetitle {
+        margin-top: 10%;
+    }
+    .homePage .pagelinks {
+        margin-bottom: 5%;
+    }
     .contentBox {
         margin: 7em auto;
         text-align: center;
@@ -147,6 +153,12 @@
  }
 
 @media screen and (max-width:992px) {
+    .introbody .dsktop {
+        display: none;
+    }
+    .introbody {
+        padding: unset;
+    }
     .navbar .links{
         display: none;
     }
@@ -176,12 +188,12 @@
         margin: 25% auto;
     }
     .introbody .decoy {
+        display: none;
         max-width: 28%;
     }
     .introbody .namecard {
         width: 17.75em;
         height: 7.5em;
-        position: absolute;
         right: 0;
 
     }
@@ -204,7 +216,9 @@
 }
 
 @media screen and (min-width: 993px){
-
+    .introbody .mobil {
+        display: none;
+    }
     .navbar .links {
         display: flex;
     }
@@ -213,9 +227,6 @@
     }
     .dropDownMenu {
         display: none;
-    }
-    .introbody .container {
-        margin: 3.25em 0 0 0;
     }
     .introbody .namecard {
         bottom: 0;
@@ -234,11 +245,11 @@
         --fs-xl: 4.5rem;
         --fs-l: 2rem;
     }
-    .introbody {
-        padding: unset;
-    }
     .introbody .namecard {
         bottom: -30em;
+    }
+    .introbody .introheadline {
+        font-size: var(--fs-xxl);
     }
     .poetryPage .carousel .list .item .content {
         padding-right: 0;
@@ -293,6 +304,12 @@
     .contactPage .headline {
         font-size: clamp(var(--fs-200), 2.5rem, 3rem);
     }
+    footer .credits a {
+        font-size: clamp(var(--fs-200), 1.75rem, 2.5rem);
+    }
+    footer .footer-title {
+        font-size: clamp(var(--fs-200), 1.75rem, 2.5rem);
+    }
 }
 
 @media screen and (min-width: 1021px) {
@@ -302,11 +319,27 @@
     .introbody {
         padding: 50px;
     }
+    .introbody .introheadline {
+        font-size: var(--fs-xl);
+    }
+    .introbody .container {
+        margin: 3.25em 0 0 0;
+    }
+    footer .footer-title {
+        font-size: 1em;
+    }
+    footer .dsktop {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 1140px) {
     .logo {
         font-size: var(--fs-300);
+    }
+    .socials li img {
+        width: 55px;
+        height: 55px;
     }
     .aboutPage .container {
         flex-direction: column;
@@ -353,6 +386,10 @@
     .contactPage .container {
         max-width: 51.5%;
     }
+    .socials li img {
+        width: 45px;
+        height: 45px;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -370,6 +407,9 @@
     .artPage .pageHeading {
         top: 6%;
     }
+    .introbody .introheadline {
+        font-size: var(--fs-xxl);
+    }
 }
 
 @media screen and (max-width: 1449px) {
@@ -384,7 +424,6 @@
     }
     .introbody .decoy {
         max-width: 12%;
-        left: 10%;
         bottom: auto;
     }
 }
@@ -546,12 +585,8 @@ body {
     height: 100%;
 }
 
-main {
-    margin-bottom: 40%;
-}
-
 .poetryPage main {
-    margin-bottom: 5%;
+    margin-bottom: 0;
 }
 
 .heading-box {
@@ -585,12 +620,12 @@ main {
 footer {
     background-color: rgb(0,0,30);
     color: #fff;
-    width: 100%;
     min-height: max-content;
     margin-top: auto;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    padding: 5px;
 }
 
 footer .resources {
@@ -599,12 +634,10 @@ footer .resources {
 
 footer .footer-title {
     margin: 0;
-    font-size: clamp(var(--fs-200), 1.75rem, 2.5rem);
 }
 
 footer .credits a{
     color: #f8f8f8;
-    font-size: clamp(var(--fs-200), 1.75rem, 2.5rem);
 }
 
 
@@ -622,8 +655,6 @@ footer .credits a{
 
 .socials li img {
     background-color: #fff;
-    width: 55px;
-    height: 55px;
 }
 
 
